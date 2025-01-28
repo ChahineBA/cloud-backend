@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/chahineba/login-page:latest
+          tags: ghcr.io/chahineba/cloud-backend:latest
           build-args: |
             MONGO_URI=${{ secrets.MONGO_URI }}
             MONGO_DB=${{ secrets.MONGO_DB }}
@@ -42,7 +42,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/chahineba/login-page:${{ github.sha }}
+          tags: ghcr.io/chahineba/cloud-backend:${{ github.sha }}
           build-args: |
             MONGO_URI=${{ secrets.MONGO_URI }}
             MONGO_DB=${{ secrets.MONGO_DB }}
